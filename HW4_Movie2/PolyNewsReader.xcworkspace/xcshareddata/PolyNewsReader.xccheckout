@@ -12,6 +12,8 @@
 	<dict>
 		<key>5E2CA145901E3DEB848E113D192AAF1121B71202</key>
 		<string>https://github.com/ishawn/CS9033HW4_InClass.git</string>
+		<key>6A3B12F7A52104310798316D257C1987ACE56EB5</key>
+		<string>https://github.com/ishawn/CS9033-Spr2015-HW-WeiShan.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>HW4_Movie2/PolyNewsReader.xcworkspace</string>
@@ -19,6 +21,8 @@
 	<dict>
 		<key>5E2CA145901E3DEB848E113D192AAF1121B71202</key>
 		<string>../..</string>
+		<key>6A3B12F7A52104310798316D257C1987ACE56EB5</key>
+		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/ishawn/CS9033HW4_InClass.git</string>
@@ -28,6 +32,14 @@
 	<string>5E2CA145901E3DEB848E113D192AAF1121B71202</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6A3B12F7A52104310798316D257C1987ACE56EB5</string>
+			<key>IDESourceControlWCCName</key>
+			<string></string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
