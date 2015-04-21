@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6750" systemVersion="13F1077" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="GU2-xT-jcv">
+<<<<<<< HEAD
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="GU2-xT-jcv">
+=======
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="GU2-xT-jcv">
+>>>>>>> origin/master
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6735"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -12,7 +16,7 @@
                     <tableView key="view" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="78" sectionHeaderHeight="22" sectionFooterHeight="22" id="PQJ-k5-4Zt">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.12156862745098039" green="0.12941176470588237" blue="0.14117647058823529" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="cell2" rowHeight="78" id="s2H-Di-wco" customClass="CustomTableViewCell" customModule="PolyNewsReader" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -57,7 +61,7 @@
                                             </variation>
                                         </label>
                                     </subviews>
-                                    <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                    <color key="backgroundColor" red="0.12156862745098039" green="0.12941176470588237" blue="0.14117647058823529" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstItem="FQz-4e-gRO" firstAttribute="leading" secondItem="5FP-E0-oEb" secondAttribute="leadingMargin" id="GWb-SX-4qt"/>
                                         <constraint firstItem="daA-hJ-mYV" firstAttribute="leading" secondItem="FQz-4e-gRO" secondAttribute="trailing" constant="8" id="Iqk-z0-VKy"/>
@@ -128,7 +132,8 @@
                                         <exclude reference="hlG-6Z-ZNS"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular">
+                                <variation key="heightClass=regular" misplaced="YES">
+                                    <rect key="frame" x="23" y="461" width="329" height="71"/>
                                     <mask key="constraints">
                                         <include reference="hlG-6Z-ZNS"/>
                                     </mask>
@@ -171,39 +176,70 @@
                                     <action selector="background:" destination="if1-Eh-Yxi" eventType="touchUpInside" id="fma-Dd-XsG"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f6x-7Z-bYQ">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="346" id="Rg8-Hd-xNF"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Rg8-Hd-xNF"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular" misplaced="YES">
+                                    <rect key="frame" x="13" y="389" width="346" height="64"/>
+                                    <mask key="constraints">
+                                        <include reference="Rg8-Hd-xNF"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="gotourl:" destination="if1-Eh-Yxi" eventType="touchUpInside" id="a3a-GG-Zvg"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <color key="backgroundColor" red="0.12156862745098039" green="0.12941176470588237" blue="0.14117647058823529" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="GsG-We-pwJ" firstAttribute="leading" secondItem="19F-qU-fH6" secondAttribute="leadingMargin" constant="-3" id="5Pc-l6-202"/>
+                            <constraint firstAttribute="centerX" secondItem="f6x-7Z-bYQ" secondAttribute="centerX" constant="1.5" id="EHd-II-14H"/>
                             <constraint firstItem="GsG-We-pwJ" firstAttribute="top" secondItem="ssW-Rs-nmc" secondAttribute="bottom" constant="8" id="Sgb-Fd-3nr"/>
                             <constraint firstItem="s8T-Y6-xyP" firstAttribute="top" secondItem="GsG-We-pwJ" secondAttribute="bottom" constant="8" id="aqm-WZ-t6D"/>
-                            <constraint firstItem="Aqx-CR-Ou3" firstAttribute="top" secondItem="s8T-Y6-xyP" secondAttribute="bottom" constant="16" id="jq6-ec-CbG"/>
+                            <constraint firstItem="Aqx-CR-Ou3" firstAttribute="top" secondItem="f6x-7Z-bYQ" secondAttribute="bottom" constant="8" id="cnX-x1-nl4"/>
+                            <constraint firstItem="f6x-7Z-bYQ" firstAttribute="top" secondItem="s8T-Y6-xyP" secondAttribute="bottom" constant="14" id="lI7-1f-gLk"/>
                             <constraint firstItem="s8T-Y6-xyP" firstAttribute="leading" secondItem="19F-qU-fH6" secondAttribute="leadingMargin" id="lTw-hI-dp1"/>
                             <constraint firstItem="Aqx-CR-Ou3" firstAttribute="leading" secondItem="19F-qU-fH6" secondAttribute="leadingMargin" constant="7" id="q64-As-e2x"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="zVi-dq-mAv"/>
+                                <exclude reference="f6x-7Z-bYQ"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="5Pc-l6-202"/>
                                 <exclude reference="Sgb-Fd-3nr"/>
                                 <exclude reference="aqm-WZ-t6D"/>
                                 <exclude reference="lTw-hI-dp1"/>
-                                <exclude reference="jq6-ec-CbG"/>
+                                <exclude reference="EHd-II-14H"/>
+                                <exclude reference="lI7-1f-gLk"/>
+                                <exclude reference="cnX-x1-nl4"/>
                                 <exclude reference="q64-As-e2x"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular">
                             <mask key="subviews">
                                 <include reference="zVi-dq-mAv"/>
+                                <include reference="f6x-7Z-bYQ"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="5Pc-l6-202"/>
                                 <include reference="Sgb-Fd-3nr"/>
                                 <include reference="aqm-WZ-t6D"/>
                                 <include reference="lTw-hI-dp1"/>
-                                <include reference="jq6-ec-CbG"/>
+                                <include reference="EHd-II-14H"/>
+                                <include reference="lI7-1f-gLk"/>
+                                <include reference="cnX-x1-nl4"/>
                                 <include reference="q64-As-e2x"/>
                             </mask>
                         </variation>
@@ -221,11 +257,12 @@
                         <outlet property="ImageP" destination="s8T-Y6-xyP" id="fMX-5D-tGK"/>
                         <outlet property="LabelDetail" destination="Aqx-CR-Ou3" id="0XI-d2-kX7"/>
                         <outlet property="LabelTitle" destination="GsG-We-pwJ" id="DQl-e7-hry"/>
+                        <outlet property="urll" destination="f6x-7Z-bYQ" id="3ER-b0-kgH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bMS-DG-v4b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3578.4375" y="495.95070422535201"/>
+            <point key="canvasLocation" x="3577.5" y="548.625"/>
         </scene>
         <!--Poly News-->
         <scene sceneID="qMi-D9-qwz">
@@ -235,7 +272,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="wOp-37-8R3">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

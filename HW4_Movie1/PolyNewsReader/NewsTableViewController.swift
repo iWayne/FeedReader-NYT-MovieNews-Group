@@ -67,6 +67,7 @@ class NewsTableViewController: UITableViewController {
         let title = json[indexPath.row]["title"].string!
         let img = json[indexPath.row]["thumbnail_standard"].string ?? ""
         let teaser = json[indexPath.row]["abstract"].string!
+        //let surl = json[indexPath.row]["url"].string!
         
         cell.title?.text = title
         //cell.detailTextLabel?.text = teaser

@@ -48,6 +48,7 @@ class DetailViewController: UIViewController {
             self.view.backgroundColor = UIColor.whiteColor()
             LabelTitle.textColor = UIColor.blackColor()
             LabelDetail.textColor = UIColor.blackColor()
+           
         }
         else{
             self.view.backgroundColor = viewFlipsideBackgroundColor

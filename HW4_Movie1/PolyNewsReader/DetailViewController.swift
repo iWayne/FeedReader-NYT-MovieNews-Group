@@ -42,6 +42,9 @@ class DetailViewController: UIViewController {
         
         
     }
+    
+    
+ 
     @IBAction func background(sender: AnyObject) {
         count += 1
         if count % 2 == 1{
@@ -52,6 +55,7 @@ class DetailViewController: UIViewController {
         else{
             self.view.backgroundColor = viewFlipsideBackgroundColor
             LabelTitle.textColor = UIColor.whiteColor()
+            
             LabelDetail.textColor = UIColor.whiteColor()
         }
         
@@ -59,10 +63,17 @@ class DetailViewController: UIViewController {
         
         
         
+        
+        
+    }
+    @IBAction func gotourl(sender: AnyObject) {
+        let url = NSURL(string: newsURL!.description)
+        UIApplication.sharedApplication().openURL(url!)
     }
     @IBOutlet weak var Bg: UIButton!
     @IBOutlet weak var LabelTitle: UILabel!
     @IBOutlet weak var ImageP: UIImageView!
+    @IBOutlet weak var urll: UIButton!
     @IBOutlet weak var LabelDetail: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -81,8 +92,11 @@ class DetailViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
         if let detail:AnyObject = self.detailItem{
             viewFlipsideBackgroundColor = self.view.backgroundColor!
-            LabelDetail.text = detail.description
+            
+                        LabelDetail.text = detail.description
+            
             LabelTitle.text = titleItem?.description
+            urll.setTitle(newsURL!.description, forState: UIControlState.Normal)
             
             if  let data = NSData(contentsOfURL: imageItem! as NSURL) {
                 ImageP.image = UIImage(data: data)
