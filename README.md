@@ -1,6 +1,6 @@
 # CS9033HW4_InClass
-InClass
+InClass Project: Feed Reader
 
-Facebook SDK: https://developers.facebook.com/docs/ios?locale=zh_CN
+A Feed Reader implements New York Times' API to read the moives news. List news in the period of 10 days and enable to share them on the Facebook.
 
-Twitter SDK: https://dev.twitter.com/twitter-kit/ios
+
