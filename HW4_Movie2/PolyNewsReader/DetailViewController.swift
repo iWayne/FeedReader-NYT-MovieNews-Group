@@ -60,7 +60,22 @@ class DetailViewController: UIViewController {
         
         
     }
+    @IBAction func goto(sender: AnyObject) {
+        let url = NSURL(string: newsURL!.description)
+        
+        UIApplication.sharedApplication().openURL(url!)
+        
+        
+        
+    }
+    
+    
+    
+    
+    
+    
     @IBOutlet weak var Bg: UIButton!
+    @IBOutlet weak var urll: UIButton!
     @IBOutlet weak var LabelTitle: UILabel!
     @IBOutlet weak var ImageP: UIImageView!
     @IBOutlet weak var LabelDetail: UILabel!
@@ -83,6 +98,9 @@ class DetailViewController: UIViewController {
             viewFlipsideBackgroundColor = self.view.backgroundColor!
             LabelDetail.text = detail.description
             LabelTitle.text = titleItem?.description
+            urll.setTitle(newsURL!.description, forState: UIControlState.Normal)
+            
+
             
             if  let data = NSData(contentsOfURL: imageItem! as NSURL) {
                 ImageP.image = UIImage(data: data)
